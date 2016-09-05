@@ -1,0 +1,84 @@
+@mixin align-vertically($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+@mixin align-horizontally($position: relative) {
+  position: $position;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+@mixin scale-element-on-hover($percentage) {
+  -webkit-transform: scale($percentage);
+  -moz-transform: scale($percentage);
+  -ms-transform: scale($percentage);
+  -o-transform: scale($percentage);
+  transform: scale($percentage);
+}
+
+@mixin horizontal-move($distance) {
+  -webkit-transform: translateX($distance);
+  -moz-transform: translateX($distance);
+  -ms-transform: translateX($distance);
+  -o-transform: translateX($distance);
+  transform: translateX($distance);
+}
+
+@mixin vertical-move($distance) {
+  -webkit-transform: translateY($distance);
+  -moz-transform: translateY($distance);
+  -ms-transform: translateY($distance);
+  -o-transform: translateY($distance);
+  transform: translateY($distance);
+}
+
+
+@mixin transition-feature($property, $duration, $timing-function) {
+  -webkit-transition: $property $duration $timing-function;
+  -moz-transition: $property $duration $timing-function;
+  -o-transition: $property $duration $timing-function;
+  transition: $property $duration $timing-function;
+
+}
+
+
+#nav-bar, #nav-bar #name-label{
+  -moz-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#nav-list li, #go-up-icon {
+  -moz-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+@mixin animation-duration-control($duration) {
+  -webkit-animation-duration: $duration;
+  -moz-animation-duration: $duration;
+  animation-duration: $duration;
+}
+
+@mixin animation-delay-control($delay) {
+  -webkit-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  animation-delay: $delay;
+}
+
+
+
+
+
