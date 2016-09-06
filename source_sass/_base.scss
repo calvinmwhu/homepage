@@ -94,7 +94,7 @@
     font-size: 2em;
   }
   li {
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 0.4em;
     border-radius: 10px;
   }
@@ -106,7 +106,7 @@
     font-size: 1.3em;
   }
   li {
-    font-size: 1em;
+    font-size: 0.9em;
     padding: 0.3em;
     border-radius: 8px;
   }
@@ -293,7 +293,7 @@ section {
   }
 
   #self-intro {
-    font: normal 1.3em $font-regular;
+    font: normal 1em $font-regular;
     height: 70%;
     div {
       //@include align-vertically(absolute);

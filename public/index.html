@@ -42,19 +42,22 @@
     <div class="section-content column col-8 l-offset-2">
         <div id="profile-container" class="column col-4">
             <img src="media/profile_square.png" class="col-8 l-offset-2 t-offset-1" id="profile-pic" alt="profile">
+
+            <a class="button" href="" target="_blank"><i class="fa fa-download"></i>MyResume</a>
         </div>
 
         <div id="self-intro" class="column col-8 l-offset-4">
             <div class="t-offset-1">
                 <p class="regular-spacing">
-                    My name is Mingwei Hu and I am currently a first year master student at
-                    Department of Computer Science, University of Illinois at Urbana-Champaign (UIUC). My research
-                    interest includes Computer Networking and Multimedia Systems. My advisor
-                    is professor <a href="https://www.ece.illinois.edu/directory/profile/klara" target="_blank">Klara
-                    Nahrstedt</a>. </p>
+                    My name is Mingwei Hu and I am currently a second year master student at
+                    Department of Computer Science, University of Illinois at Urbana-Champaign (UIUC). My field of interests include Computer Networking and Multimedia Systems.
                 <p class="regular-spacing">In May 2015, I graduated with a CS Bachelor's degree with High Honors from
                     UIUC.</p>
-                <p>Feel free to reach me at the following sites. I'm always open to new ideas :) !</p>
+                <p>Fun fact: In order to sharpen my front-end skills, I chose to build this site entirely from scratch without using any css framework.
+                    I wrote my own css grid layout for this page, as well as features such as sliding Carousel, modals, and smooth-scrolling. If you are interested, check out the code <a href="https://github.com/calvinmwhu/homepage" target="_blank">here</a> ! </p>
+                <p>Well, my next goal is to make this site responsible and more mobile-friendly, which it isn't right now.</p>
+                <p>Feel free to reach me at the following sites. Or just shoot me an email at <a href="mailto:mhu9@illinois.edu">mhu9 AT illinois DOT edu</a>
+                    . I'm always open to new ideas :) !</p>
             </div>
         </div>
 
@@ -89,9 +92,6 @@
                 <h3>University of Illinois at Urbana-Champaign</h3>
                 <p>Master of Science in Computer Science, May 2017</p>
                 <ul class="regular-spacing">
-                    <li>
-                        Research interest: Computer Networking, Multimedia Systems
-                    </li>
                     <li>
                         Teaching Assistant for CS438(spring 2016), CS101(fall 2015)
                     </li>
@@ -252,11 +252,10 @@
             <div class="carousel-arrow" id="carousel-l-arrow"><a id="arrow-left" class="fa fa-angle-left"></a></div>
 
             <div class="carousel-content box-with-shadow" id="carousel-0">
-                <div class="carousel-description col-5 center"><h1>Human and Robot</h1></div>
-                <div class="carousel-image col-6 l-offset-5" id="robot">
-                    <!--<div class="image-overlay"><h2 class="column col-10 l-offset-1">Click for more details</h2></div>-->
+                <div class="carousel-description col-5 center"><h1>Foodent</h1></div>
+                <div class="carousel-image col-6 l-offset-5" id="foodent">
                     <div class="image-overlay"><i class="fa fa-plus"></i></div>
-                    <img src="media/robot.gif" class="col-12" alt="robot">
+                    <img src="media/foodent.png" class="col-12" alt="foodent">
                 </div>
             </div>
             <div class="carousel-content box-with-shadow" id="carousel-1">
@@ -278,6 +277,14 @@
                 <div class="carousel-image col-6 l-offset-5" id="svn">
                     <div class="image-overlay"><i class="fa fa-plus"></i></div>
                     <img src="media/svn.jpg" class="col-12" alt="svn">
+                </div>
+            </div>
+
+            <div class="carousel-content box-with-shadow" id="carousel-4">
+                <div class="carousel-description col-5 center"><h1>Human and Robot</h1></div>
+                <div class="carousel-image col-6 l-offset-5" id="robot">
+                    <div class="image-overlay"><i class="fa fa-plus"></i></div>
+                    <img src="media/robot.gif" class="col-12" alt="robot">
                 </div>
             </div>
 
@@ -304,7 +311,7 @@
         </div>
         <div class="row row-4 t-offset-4">
             <div class="column col-4 icon-container">
-                <img src="media/c_logo.png" class="col-4 l-offset-4" alt="c">
+                <img src="media/angular.svg" class="col-4 l-offset-4" alt="c">
 
             </div>
             <div class="column col-4 l-offset-4 icon-container">
@@ -317,14 +324,14 @@
         </div>
         <div class="row row-4 t-offset-8">
             <div class="column col-4 icon-container">
-                <img src="media/matlab_logo.png" class="col-6 l-offset-3" alt="ml">
+                <img src="media/nodejs-logo.png" class="col-6 l-offset-3" alt="ml">
 
             </div>
             <div class="column col-4 l-offset-4 icon-container">
                 <img src="media/latex_logo.png" class="col-4 l-offset-4" alt="tex">
             </div>
             <div class="column col-4 l-offset-8 icon-container">
-                <img src="media/ruby_logo.png" class="col-4 l-offset-4" alt="ruby">
+                <img src="media/npm.png" class="col-4 l-offset-4" alt="ruby">
 
             </div>
         </div>
@@ -334,6 +341,31 @@
 
 <div id="modal-layer">
 
+</div>
+
+<div class="modal col-4 l-offset-4" id="foodent-modal">
+    <img src="media/foodent_modal.png" alt="foodent-modal">
+    <div class="col-10 l-offset-1 modal-description">
+        <h1>Foodent</h1>
+        <ol>
+            <li>
+                A MEAN stack web application for hosting, inviting and attending free food events
+            </li>
+            <li>
+                By creating this app, out goal is to connect hungry people to generous people who are willing to shared their food with each other.
+            </li>
+            <li>
+                The app allows user to become a host who can freely create food events and invite other people to join. It also allows user to become a guest so that it can freely browse food events happening around it.
+            </li>
+            <li>
+                Watch the demo <a href="https://youtu.be/d1Zp-DSKhfk" target="_blank">here</a>!
+            </li>
+            <li>
+                See a prototype <a href="http://anuragchoudhary.com/foodent-client/" target="_blank">here</a>!
+            </li>
+        </ol>
+    </div>
+    <div class="modal-footer"><h2 class="col-6 l-offset-3">Dismiss</h2></div>
 </div>
 
 <div class="modal col-4 l-offset-4" id="robot-modal">
