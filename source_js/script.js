@@ -30,7 +30,7 @@ $(document).ready(function () {
         $("#background-video").css({"width": homewidth});
     }
     $("section").css({"min-height": 0.9 * $(window).height()});
-    $("#experiences").css({"height": 2.5 * $(window).height()});
+    $("#experiences").css({"height": 2 * $(window).height()});
 
     $("#footer-home").css({"min-height": 0.15 * $(window).height()});
 
@@ -66,7 +66,7 @@ $(window).resize(function () {
     $("#home").css({"height": videoHeight});
 
     $("section").css({"min-height": 0.9 * $(window).height()});
-    $("#experiences").css({"height": 2.5 * $(window).height()});
+    $("#experiences").css({"height": 2 * $(window).height()});
 
     $("#footer-home").css({"min-height": 0.15 * $(window).height()});
 });
