@@ -310,14 +310,14 @@ section {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 30%;
+    height: 20%;
     ul {
       @include align-vertically(absolute);
       li {
         display: inline-block;
         margin: 1.5em;
         .fa {
-          font-size: 3.5em;
+          font-size: 2.5em;
           color: #3c510c;
           @include transition-feature(transform, 0.3s, ease-out);
         }
