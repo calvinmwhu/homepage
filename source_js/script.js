@@ -30,6 +30,7 @@ $(document).ready(function () {
         $("#background-video").css({"width": homewidth});
     }
     $("section").css({"min-height": 0.9 * $(window).height()});
+    $("#experiences").css({"height": 2.5 * $(window).height()});
 
     $("#footer-home").css({"min-height": 0.15 * $(window).height()});
 
@@ -65,6 +66,7 @@ $(window).resize(function () {
     $("#home").css({"height": videoHeight});
 
     $("section").css({"min-height": 0.9 * $(window).height()});
+    $("#experiences").css({"height": 2.5 * $(window).height()});
 
     $("#footer-home").css({"min-height": 0.15 * $(window).height()});
 });
@@ -183,6 +185,7 @@ function navbar_effect_on_scroll() {
         var homePos = $('#home').offset().top;
         var aboutPos = $('#about').offset().top;
         var eduPos = $('#education').offset().top;
+        var expePos = $('#experiences').offset().top;
         var projectsPos = $('#projects').offset().top;
         var skillsPos = $('#skills').offset().top;
 
@@ -221,10 +224,16 @@ function navbar_effect_on_scroll() {
             $('#scroll-to-about').removeClass('navbar-position-indicator');
         }
 
-        if (curPos >= eduPos - 1 && curPos < projectsPos - 1) {
+        if (curPos >= eduPos - 1 && curPos < expePos - 1) {
             $('#scroll-to-education').addClass('navbar-position-indicator');
         } else {
             $('#scroll-to-education').removeClass('navbar-position-indicator');
+        }
+
+        if (curPos >= expePos - 1 && curPos < projectsPos - 1) {
+            $('#scroll-to-experiences').addClass('navbar-position-indicator');
+        } else {
+            $('#scroll-to-experiences').removeClass('navbar-position-indicator');
         }
 
         if (curPos >= projectsPos - 1 && curPos < skillsPos - 1) {

@@ -397,6 +397,60 @@ section {
 
 }
 
+#experiences {
+  .edu-content {
+    height: 25%;
+    font: normal 1em $font-regular;
+    .uiuc-pic {
+      //@include align-vertically(absolute);
+      overflow: hidden;
+      //border: 2px solid blue;
+      img {
+        float: right;
+      }
+    }
+    .edu-experience {
+      margin-left: 0.5em;
+      //border: 2px solid black;
+      overflow: hidden;
+      //@include align-vertically(absolute);
+      h3 {
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #3c510c;
+      }
+      p {
+        font-style: italic;
+        margin-bottom: 0.5em;
+      }
+      ul {
+        list-style: disc inside;
+        color: #000000;
+        font-weight: 600;
+        a {
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+  #groupon-exp {
+    top: 0;
+  }
+  #UIUC-ta {
+    top: 25%;
+  }
+  #phenix {
+    top: 50%;
+  }
+  #ncsa {
+    top: 75%;
+  }
+
+}
+
+
+
 #projects:before {
   content: ' ';
   display: block;
@@ -490,6 +544,11 @@ section {
   height: 75%;
   //border: 2px dashed black;
   overflow: hidden;
+}
+
+.long-section-content {
+  top: 10%;
+  height: 80%;
 }
 
 .box-with-shadow {

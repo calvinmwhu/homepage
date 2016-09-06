@@ -1,9 +1,9 @@
 {
-  "name": "mp1_starter",
+  "name": "homepage",
   "version": "1.0.0",
-  "homepage": "https://github.com/uiuc-web-programming/mp1_starter",
+  "homepage": "https://bitbucket.org/calvinmwhu/homepage",
   "authors": [
-    "biplabdeka <biplab.deka@gmail.com>"
+    "Mingwei <calvinmwhu@gmail.com>"
   ],
   "dependencies": {
     "express": "^4.11.1",
